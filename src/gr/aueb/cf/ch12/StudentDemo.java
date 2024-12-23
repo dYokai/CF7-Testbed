@@ -6,12 +6,12 @@ public class StudentDemo {
 
         Student student = new Student();
 
-        student.id = 1;
-        student.firstname = "Alice";
-        student.lastname = "W.";
+        student.setId(1);
+        student.setFirstname("Alice");
+        student.setLastname("W.");
 
-        System.out.println("Id: " + student.id);
-        System.out.println("Firstname: " + student.firstname);
-        System.out.println("Lastanme: " + student.lastname);
+        System.out.println("Id: " + student.getID());
+        System.out.println("Firstname: " + student.getFirstname());
+        System.out.println("Lastanme: " + student.getLastname());
     }
 }
