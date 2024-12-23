@@ -2,34 +2,57 @@ package gr.aueb.cf.ch12;
 
 /**
  * Data class.
- * Encapsulation
+ * POJO (Plain Old Java Object)
+ * Java Bean => Μία κλάση που μας παρέχει private πεδία, default constructor,
+ * getter & setters με convention. (+ serializable)
+ * alt + insert Constructor
+ * alt + insert Getter and setter
+ * right click => generate αντί για alt + insert
  */
 public class Student {
+    private static int studentsCount;
+
     private int id;
     private String firstname;
     private String lastname;
 
-        public int getID(){
-            return id; // this.id
-        }
+    static {
+        studentsCount = 0;
+    }
 
-        public void setId(int id){
-            this.id = id;
-        }
+    //Default Constructor
+    public Student() {
+        studentsCount++;
+    }
 
-        public String getFirstname() {
-            return firstname;
-        }
+    //Overloaded Constructor
+    public Student(int id, String firstname, String lastname){
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
 
-        public void setFirstname(String firstname){
-            this.firstname = firstname;
-        }
+    public int getId() {
+        return id;
+    }
 
-        public String getLastname(){
-            return lastname;
-        }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-        public void setLastname(String lastname){
-            this.lastname = lastname;
-        }
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
 }
