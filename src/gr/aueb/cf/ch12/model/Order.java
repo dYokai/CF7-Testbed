@@ -27,6 +27,9 @@ public class Order {
         this.formattedTimestamp = this.timestamp.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
     }
 
+    public Order(int i, int i1, int i2, String meat, String ordered) {
+    }
+
     public int getId() {
         return id;
     }
