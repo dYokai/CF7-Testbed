@@ -2,8 +2,8 @@ package gr.aueb.cf.ch14;
 
 import gr.aueb.cf.ch14.model.Point;
 import gr.aueb.cf.ch14.model.Teacher;
-import gr.aueb.cf.ch14.model.services.CodingFactorySingleton;
-import gr.aueb.cf.ch14.model.services.HelloUtil;
+import gr.aueb.cf.ch14.services.CodingFactorySingleton;
+import gr.aueb.cf.ch14.services.HelloUtil;
 
 public class Main {
 

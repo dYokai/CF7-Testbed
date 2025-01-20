@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch14.model.services;
+package gr.aueb.cf.ch14.services;
 
 public class CodingFactorySingleton {
     private static final CodingFactorySingleton INSTANCE = new CodingFactorySingleton();
