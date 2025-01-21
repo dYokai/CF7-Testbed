@@ -3,8 +3,8 @@ package gr.aueb.cf.ch17.knight;
 public class Main {
 
     public static void main(String[] args) {
-        Knight joa = new Knight();
-        Knight saintGeorge = new Knight();
+//        Knight joa = new Knight();
+//        Knight saintGeorge = new Knight();
 
 //        joa.embarkOnMission(new IMission() {
 //            @Override
@@ -22,8 +22,8 @@ public class Main {
 //        });
 
         //saintGeorge.embarkOnMission(() -> killTheDragon());
-        saintGeorge.embarkOnMission(Main::killTheDragon);
-        joa.embarkOnMission(Main::saveThePrincess);
+//        saintGeorge.embarkOnMission(Main::killTheDragon);
+//        joa.embarkOnMission(Main::saveThePrincess);
     }
 
     public static void killTheDragon() {
